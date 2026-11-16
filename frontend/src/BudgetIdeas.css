@@ -1,0 +1,72 @@
+.budget-page {
+  min-height: 100vh;
+  padding: 45px 7%;
+  background: #f8f1e8;
+  color: #49352b;
+  font-family: Arial, sans-serif;
+}
+
+.budget-page h1 {
+  color: #543b2f;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.budget-page > p {
+  color: #806b5c;
+  margin-bottom: 25px;
+}
+
+.budget-page input {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px;
+  border: 1px solid #d9bba7;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+}
+
+.budget-page input:focus {
+  border-color: #c77d5c;
+}
+
+.budget-results {
+  margin-top: 35px;
+}
+
+.budget-results h2 {
+  color: #704b38;
+  margin-bottom: 20px;
+}
+
+.budget-card {
+  background: #fffaf4;
+  padding: 22px;
+  margin-bottom: 18px;
+  border-radius: 15px;
+  border: 1px solid #ead9c9;
+  box-shadow: 0 4px 12px rgba(85, 58, 40, 0.08);
+}
+
+.budget-card h3 {
+  color: #704b38;
+  margin-bottom: 12px;
+}
+
+.budget-card p {
+  color: #78675b;
+  line-height: 1.7;
+}
+.back-home-btn{
+  display: inline-block;
+  background: #9b5743;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.back-home-btn:hover{
+  background:#70402f;
+}

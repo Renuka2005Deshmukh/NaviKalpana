@@ -1,0 +1,118 @@
+/* Ideas Page */
+.ideas-page {
+  min-height: 100vh;
+  padding: 35px 6%;
+  background: #f8f1e8;
+  font-family: Arial, sans-serif;
+  color: #49352b;
+}
+
+/* Back Button */
+.ideas-back-btn {
+  padding: 11px 22px;
+  background: #6b4938;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.ideas-back-btn:hover {
+  background: #a66b50;
+  transform: translateY(-2px);
+}
+
+/* Heading */
+.ideas-heading {
+  margin-top: 35px;
+  margin-bottom: 12px;
+  color: #543b2f;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.ideas-page > p {
+  color: #806b5c;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+/* Ideas Grid */
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* Idea Cards */
+.idea-card {
+  background: #fffaf4;
+  padding: 28px 24px;
+  border-radius: 18px;
+  border: 1px solid #ead9c9;
+  box-shadow: 0 5px 18px rgba(85, 58, 40, 0.08);
+  transition: 0.3s;
+}
+
+.idea-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(85, 58, 40, 0.15);
+}
+
+.idea-card h2 {
+  color: #704b38;
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+.idea-card p {
+  color: #78675b;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.idea-card strong {
+  color: #543b2f;
+}
+
+/* View Details Button */
+.idea-card .card-btn {
+  margin-top: 15px;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 25px;
+  background: #c77d5c;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.idea-card .card-btn:hover {
+  background: #a65e42;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .ideas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .ideas-page {
+    padding: 25px 5%;
+  }
+
+  .ideas-heading {
+    font-size: 26px;
+  }
+
+  .ideas-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,64 @@
+.purpose-page {
+  min-height: 100vh;
+  padding: 45px 7%;
+  background: #f8f1e8;
+  color: #49352b;
+  font-family: Arial, sans-serif;
+}
+
+.purpose-page h1 {
+  color: #543b2f;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.purpose-page > p {
+  color: #806b5c;
+  margin-bottom: 25px;
+}
+
+.purpose-page select {
+  width: 100%;
+  max-width: 400px;
+  padding: 14px;
+  border: 1px solid #d9bba7;
+  border-radius: 10px;
+  background: #fffaf4;
+  color: #49352b;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.purpose-results {
+  margin-top: 35px;
+}
+
+.purpose-results h2 {
+  color: #704b38;
+  margin-bottom: 20px;
+}
+
+.purpose-card {
+  background: #fffaf4;
+  padding: 22px;
+  margin-bottom: 16px;
+  border-radius: 15px;
+  border: 1px solid #ead9c9;
+  box-shadow: 0 4px 12px rgba(85, 58, 40, 0.08);
+}
+
+.purpose-card h3 {
+  color: #704b38;
+}
+.back-home-btn{
+  display: inline-block;
+  background: #9b5743;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+.back-home-btn:hover{
+  background:#70402f;
+}
