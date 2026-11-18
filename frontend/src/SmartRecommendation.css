@@ -1,0 +1,150 @@
+.smart-page {
+  max-width: 1100px;
+  margin: 45px auto;
+  padding: 45px 35px;
+  text-align: center;
+  background: linear-gradient(135deg, #f4fbf4, #fff8ed);
+  border: 1px solid #e2eddf;
+  border-radius: 28px;
+  box-shadow: 0 15px 45px rgba(50, 90, 60, 0.10);
+}
+
+.smart-page h1 {
+  color: #245c3c;
+  font-size: 38px;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.smart-page > p {
+  color: #718477;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.smart-page h3 {
+  color: #315d43;
+  font-size: 19px;
+  margin: 28px 0 17px;
+}
+
+.smart-materials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.smart-materials label {
+  background: white;
+  padding: 15px 22px;
+  border: 1px solid #d9e9d9;
+  border-radius: 14px;
+  color: #42634b;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 4px 12px rgba(50, 90, 60, 0.05);
+}
+
+.smart-materials label:hover {
+  background: #e5f4e5;
+  transform: translateY(-3px);
+}
+
+.smart-materials input {
+  accent-color: #368653;
+  margin-right: 9px;
+}
+
+.smart-page input[type="number"],
+.smart-page select {
+  padding: 14px 18px;
+  width: 260px;
+  border: 1px solid #cbdcc9;
+  border-radius: 12px;
+  background: white;
+  color: #315d43;
+  font-size: 16px;
+  outline: none;
+}
+
+.smart-page input:focus,
+.smart-page select:focus {
+  border-color: #479765;
+  box-shadow: 0 0 0 3px rgba(71, 151, 101, 0.12);
+}
+
+.smart-page button {
+  display: block;
+  margin: 35px auto;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #286b43, #62a875);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(40, 107, 67, 0.22);
+  transition: 0.3s;
+}
+
+.smart-page button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(40, 107, 67, 0.3);
+}
+
+.smart-page button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.smart-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.smart-card {
+  padding: 25px;
+  text-align: left;
+  background: white;
+  border: 1px solid #e1ecdf;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(50, 90, 60, 0.08);
+  transition: 0.3s;
+}
+
+.smart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 13px 28px rgba(50, 90, 60, 0.14);
+}
+
+.smart-card h3 {
+  color: #286b43;
+  font-size: 21px;
+  margin-top: 0;
+}
+
+.smart-card p {
+  color: #66776a;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .smart-page {
+    margin: 15px;
+    padding: 28px 18px;
+  }
+
+  .smart-page h1 {
+    font-size: 28px;
+  }
+
+  .smart-page input[type="number"],
+  .smart-page select {
+    width: 100%;
+  }
+}

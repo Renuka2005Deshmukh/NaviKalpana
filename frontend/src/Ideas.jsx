@@ -8,7 +8,7 @@ function Ideas() {
   const navigate = useNavigate();
 
   const material = location.state?.material || "Plastic Bottles";
-
+  const apiMaterial = material ==="Paper Crafts"?"Paper":material;
   const [ideas, setIdeas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -20,7 +20,7 @@ function Ideas() {
         setError("");
 
         const response = await fetch(
-          `http://localhost:8080/api/ideas/material/${encodeURIComponent(material)}`
+          `http://localhost:8080/api/ideas/material/${encodeURIComponent(apiMaterial)}`
         );
 
         if (!response.ok) {
@@ -29,6 +29,7 @@ function Ideas() {
 
         const data = await response.json();
         setIdeas(data);
+        console.log("Paper API Data:",data);
       } catch (err) {
         setError("Unable to connect to server. Please try again.");
       } finally {
@@ -101,18 +102,28 @@ alert(result);
         {ideas.map((idea) => (
           <div className="idea-card" key={idea.idea_id}>
             <img
-              src={
-                material === "Plastic Bottles"
-                  ? "/images/plastic.jpg"
-                  : material === "Paper"
-                  ? "/images/paper.jpg"
-                  : material === "Cardboard"
-                  ? "/images/cardboard.jpg"
-                  : "/images/glass.jpg"
-              }
-              alt={material}
-              className="idea-image"
-            />
+  src={
+    {
+      "Plastic Bottle Planter": "/images/plastic.jpg",
+      "Bottle Desk Organizer": "/images/bottle-organizer.jpg",
+      "Hanging Garden": "/images/hanging-garden.jpg",
+
+      "Paper Flowers": "/images/paper-flower.jpg",
+      "Paper Wall Art": "/images/paper-wall-art.jpg",
+      "Paper Gift Bag": "/images/paper-gift-bag.jpg",
+
+      "Cardboard Organizer": "/images/cardboard-organizer.jpg",
+      "Mini Storage Box": "/images/mini-storage-box.jpg",
+      "Photo Frame": "/images/photo-frame.jpg",
+
+      "Decorative Bottle": "/images/decorative-bottles.jpg",
+      "Bottle Flower Vase": "/images/glass.jpg",
+      "Bottle Lamp": "/images/bottle-lamp.jpg"
+    }[idea.title] || "/images/default.jpg"
+  }
+  alt={idea.title}
+  className="idea-image"
+/>
 
             <h2>{idea.title}</h2>
 

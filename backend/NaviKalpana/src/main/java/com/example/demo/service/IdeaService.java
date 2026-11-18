@@ -34,4 +34,11 @@ public class IdeaService {
     	return
     ideaRepository.getIdeasByPurpose(purpose);
     }
+       public List<Map<String,Object>>
+       getIdeasByMaterials(List<Integer>materialIds,double budget,String purpose){
+    	  
+    	   
+       	return
+       ideaRepository.getIdeasByMaterials(materialIds,budget,purpose);
+       }
 }

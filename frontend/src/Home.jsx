@@ -1,10 +1,17 @@
 import { useState } from "react";
 import "./App.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 
 function Home() {
+  const navigate = useNavigate();
+  const handleLogout =()=>{
+    localStorage.removeItem("userId");
+    alert("Logged out successfully!");
+    navigate("/");
+  }
   
   const [search, setSearch] = useState("");
 
@@ -59,10 +66,12 @@ function Home() {
           <a href="#ideas">Ideas</a>
           <Link to="/budgetideas">Budget Ideas</Link>
           <Link to="/purposeideas">Purpose Ideas</Link>
-          <Link to="/favorites">Favorites</Link>
+          <Link to="/smart-recommendation">Smart Reuse Studio</Link>
+           <Link to="/favorites">Favorites</Link>
         </div>
 
        <Link to="/login">Login</Link>
+       {localStorage.getItem("userId")&&(<button onClick={handleLogout}className="logout-btn">LogOut</button>)}
       </nav>
 
       {/* Hero Section */}
